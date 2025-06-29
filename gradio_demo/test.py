@@ -1,0 +1,3 @@
+from photomaker import PhotoMakerStableDiffusionXLPipeline
+
+help(PhotoMakerStableDiffusionXLPipeline)

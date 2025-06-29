@@ -8,6 +8,8 @@ numpy
 accelerate
 safetensors
 omegaconf
+onnxruntime
 peft
 gradio
 insightface==0.7.3
+einops

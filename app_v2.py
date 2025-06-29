@@ -67,7 +67,6 @@ pipe.load_photomaker_adapter(
     trigger_word="img",
     pm_version="v2",
 )
-
 pipe.id_encoder.to(device)
 
 pipe.scheduler = EulerDiscreteScheduler.from_config(pipe.scheduler.config)
@@ -206,13 +205,13 @@ def get_image_path_list(folder_name):
 def get_example():
     case = [
         [
-            get_image_path_list('/disk1/fjm/PhotoMaker/examples/scarletthead_woman'),
+            get_image_path_list('./examples/scarletthead_woman'),
             "instagram photo, portrait photo of a woman img, colorful, perfect face, natural skin, hard shadows, film grain",
             "(No style)",
             "(asymmetry, worst quality, low quality, illustration, 3d, 2d, painting, cartoons, sketch), open mouth",
         ],
         [
-            get_image_path_list('/disk1/fjm/PhotoMaker/examples/newton_man'),
+            get_image_path_list('./examples/newton_man'),
             "sci-fi, closeup portrait photo of a man img wearing the sunglasses in Iron man suit, face, slim body, high quality, film grain",
             "(No style)",
             "(asymmetry, worst quality, low quality, illustration, 3d, 2d, painting, cartoons, sketch), open mouth",
